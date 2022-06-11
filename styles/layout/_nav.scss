@@ -1,3 +1,5 @@
+@use '../abstract/variable' ;
+
 // Navigation Styling
 .nav-items{
     display: flex;
@@ -6,7 +8,8 @@
 }
 .nav-items a{
     text-decoration: none;
-    color: black;
+    color: variable.$dark-purple;
+    
 }
 // Page Water Mark
 .titlemark{
@@ -14,10 +17,23 @@
     transform: rotate(90deg);
     right: 0;
     top: 50%;
-    font-size: 2rem;
+    font-size: 4.3rem;
+    text-transform: capitalize;
+    opacity: 10%;
+    color: variable.$dark-purple;
+
 }
-.nav{
-    display: flex;
-    justify-content: space-between;
-    padding-block: 1em;
+.header{
+    box-shadow: 0 3px 3px rgba(66, 43, 112, 0.188);
+    
+
+    .nav{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 1em;
+        font-size: variable.$navfont;
+        color: variable.$dark-purple;
+    
+    }
+
 }

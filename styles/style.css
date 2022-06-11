@@ -1,3 +1,8 @@
+.contain {
+  width: clamp(12.5rem, 100%, 50rem);
+  margin: 0 auto;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -86,13 +91,12 @@ select {
 }
 @font-face {
   font-family: "Segoe UI";
-  font-style: bold;
+  font-style: normal;
   font-weight: bold;
   src: local("Segoe UI Bold"), url("../../Font/Segoe UI Bold.woff") format("woff");
 }
-.contain {
-  width: clamp(12.5rem, 100%, 50rem);
-  margin: 0 auto;
+body {
+  font-family: "Segoe UI";
 }
 
 .nav-items {
@@ -103,7 +107,7 @@ select {
 
 .nav-items a {
   text-decoration: none;
-  color: black;
+  color: #422B70;
 }
 
 .titlemark {
@@ -111,15 +115,19 @@ select {
   transform: rotate(90deg);
   right: 0;
   top: 50%;
-  font-size: 2rem;
+  font-size: 4.3rem;
+  text-transform: capitalize;
+  opacity: 10%;
+  color: #422B70;
 }
 
-.nav {
+.header {
+  box-shadow: 0 3px 3px rgba(66, 43, 112, 0.188);
+}
+.header .nav {
   display: flex;
   justify-content: space-between;
   padding-block: 1em;
-}
-
-body {
-  font-family: "Segoe UI";
+  font-size: 1rem;
+  color: #422B70;
 }/*# sourceMappingURL=style.css.map */

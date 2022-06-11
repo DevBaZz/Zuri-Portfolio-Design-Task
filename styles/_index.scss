@@ -1,6 +1,8 @@
+@forward './abstract/variable';
+@forward './abstract/utilities';
+
 @forward './base/reset';
 @forward './base/typo';
 
-@forward './abstract/utilities';
 
 @forward './layout/nav';

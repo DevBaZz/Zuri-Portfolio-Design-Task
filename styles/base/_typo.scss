@@ -1,3 +1,5 @@
+
+// Local Webfont : Don't Change ----------------------------------------------------------------
 @font-face {
     font-family: "Segoe UI";
     font-style: normal;
@@ -5,12 +7,15 @@
     src: local("Segoe UI Regular"), url("../../Font/Segoe\ UI.woff") format("woff");
 }
 
-
-
 @font-face {
     font-family: "Segoe UI";
-    font-style: bold;
+    font-style: normal;
     font-weight: bold;
     src: local("Segoe UI Bold"), url("../../Font/Segoe\ UI\ Bold.woff") format("woff");
+}
+
+// Styling done here ----------------------------------------------------------------
+body{
+    font-family: "Segoe UI";
 }
 
