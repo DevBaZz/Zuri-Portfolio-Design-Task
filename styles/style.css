@@ -159,7 +159,7 @@ body {
 
 .titlemark {
   position: absolute;
-  transform: rotate(90deg) translateY(-5rem);
+  transform: rotate(90deg) translate(10rem, -5rem);
   right: 0;
   top: 10%;
   font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
@@ -182,6 +182,7 @@ body {
 
 body {
   background-color: #F7F5FA;
+  overflow-x: hidden;
 }
 
 main {
@@ -190,6 +191,24 @@ main {
 
 .nav-logo {
   font-weight: bold;
+}
+
+footer {
+  padding-block: 2rem;
+  background-color: black;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  color: white;
+}
+footer .ft {
+  justify-content: space-between;
+}
+footer ul.flex {
+  gap: 3rem;
+  list-style: none;
+}
+footer ul.flex a {
+  text-decoration: none;
+  color: white;
 }
 
 .img-con {
@@ -236,7 +255,7 @@ main {
 .divid {
   background-color: #422B70;
   position: relative;
-  padding: 1rem 0;
+  padding: 1.4rem 0;
 }
 
 .things {

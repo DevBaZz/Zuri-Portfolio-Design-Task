@@ -14,7 +14,7 @@
 // Page Water Mark
 .titlemark{
     position: absolute;
-    transform: rotate(90deg) translateY(-5rem);
+    transform: rotate(90deg) translate(10rem, -5rem);
     right: 0;
     top:10%;
     font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
@@ -38,6 +38,7 @@
 
 body{
     background-color: $background-color;
+    overflow-x: hidden;
 }
 
 main{
@@ -45,4 +46,22 @@ main{
 }
 .nav-logo{
     font-weight: bold;
+}
+
+footer{
+    padding-block: 2rem;
+    background-color: black;
+    font-size: $normalfont;
+    color: white;
+    .ft{
+        justify-content: space-between;
+    }
+    ul.flex {
+        gap: 3rem;
+        list-style: none;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+    }
 }
