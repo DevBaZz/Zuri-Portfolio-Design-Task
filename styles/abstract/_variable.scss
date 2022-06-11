@@ -7,4 +7,22 @@ $brightPurple:#8752DD;
 // Font---  
 $navfont:1rem;
 $authortex:clamp(0.6rem, 0.273rem + 1.64vw, 1.5rem);
-$authorname: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
+$authorname: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+$mega:clamp(2rem, 0.545rem + 7.27vw, 6rem);
+$normalfont:clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+
+@mixin btn($bkc,$cc) {
+    background-color: $bkc;
+    padding-block: .7em;
+    padding-inline: 2em;
+    border-radius: 2.8em;
+    color: $cc;
+}
+
+@mixin linebtc($cc) {
+    background-color: $cc;
+    padding: .6em 1.2em;
+    border-color: $brightPurple;
+    border-style: solid;
+    border-width: .5em;
+}

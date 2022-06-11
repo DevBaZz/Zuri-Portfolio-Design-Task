@@ -13,7 +13,7 @@
     }
     .creative {
         align-items: center;
-        gap: 2.8rem;
+        gap: 2.5em;
         font-size:$authortex;
     }
 
@@ -25,9 +25,12 @@
     }
   
 }
+.author-d{
+    font-size: $normalfont ;
+}
 
 .btn{
-    font-size: $navfont;
+    font-size: $normalfont;
     
 }
 .author-img{
@@ -37,4 +40,26 @@
 .bazz{
     justify-content: space-between;
     align-items: flex-start;
+    padding-bottom: 2rem;
+}
+
+.divid{
+    background-color: $dark-purple;
+    position: relative;
+    padding: 1rem 0;
+}
+
+.things{
+    font-size:$mega;
+    font-weight: bold;
+    color: white;
+    transform: translateY(1rem);
+    text-transform: uppercase;
+   
+    
+}
+.doing{
+    font-size: $normalfont;
+    gap: 4em;
+    color: white;
 }

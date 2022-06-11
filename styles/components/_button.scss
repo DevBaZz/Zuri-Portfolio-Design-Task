@@ -1,9 +1,23 @@
-
+@use "../abstract/variable" as *;
 
 .btn{
     background-color: white;
     padding: .6em 1.2em;
-    // border-color: $dark-purple;
+    border-color: $brightPurple;
     border-style: solid;
     border-width: .2em .2em .2em 1em;
+}
+
+.btn1{
+   @include btn($brightPurple, white);
+   a{
+    color: inherit;
+   }
+}
+.btn2{
+   @include btn(white, $brightPurple);
+   border: solid $brightPurple 1px;
+   a{
+    color: inherit;
+   }
 }

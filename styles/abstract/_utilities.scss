@@ -1,6 +1,7 @@
 .contain{
     width: clamp(12.5rem, 100%, 58rem);
     margin: 0 auto;
+    padding-inline: 1rem;
 }
 .flex{
     display: flex;
@@ -8,4 +9,7 @@
 
 .flow > * + *{
     margin-top: 2.4rem;
+}
+.mr{
+    margin-left: 6rem;
 }

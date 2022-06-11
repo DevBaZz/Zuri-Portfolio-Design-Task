@@ -1,4 +1,4 @@
-@use '../abstract/variable' ;
+@use '../abstract/variable' as * ;
 
 // Navigation Styling
 .nav-items{
@@ -8,7 +8,7 @@
 }
 .nav-items a{
     text-decoration: none;
-    color: variable.$dark-purple;
+    
     
 }
 // Page Water Mark
@@ -16,11 +16,11 @@
     position: absolute;
     transform: rotate(90deg) translateY(-5rem);
     right: 0;
-    top: 50%;
+    top:10%;
     font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
     text-transform: capitalize;
     opacity: 10%;
-    color: variable.$dark-purple;
+    color: $dark-purple;
 
 }
 .header{
@@ -30,12 +30,19 @@
         display: flex;
         justify-content: space-between;
         padding-block: 1.5em;
-        font-size: variable.$navfont;
-        color: variable.$dark-purple;
+        font-size: $normalfont;
+        color: $dark-purple;
     }
 
 }
 
 body{
-    background-color: variable.$background-color;
+    background-color: $background-color;
+}
+
+main{
+    position: relative;
+}
+.nav-logo{
+    font-weight: bold;
 }

@@ -1,6 +1,7 @@
 .contain {
   width: clamp(12.5rem, 100%, 58rem);
   margin: 0 auto;
+  padding-inline: 1rem;
 }
 
 .flex {
@@ -9,6 +10,10 @@
 
 .flow > * + * {
   margin-top: 2.4rem;
+}
+
+.mr {
+  margin-left: 6rem;
 }
 
 /* Box sizing rules */
@@ -114,8 +119,32 @@ body {
 .btn {
   background-color: white;
   padding: 0.6em 1.2em;
+  border-color: #8752DD;
   border-style: solid;
   border-width: 0.2em 0.2em 0.2em 1em;
+}
+
+.btn1 {
+  background-color: #8752DD;
+  padding-block: 0.7em;
+  padding-inline: 2em;
+  border-radius: 2.8em;
+  color: white;
+}
+.btn1 a {
+  color: inherit;
+}
+
+.btn2 {
+  background-color: white;
+  padding-block: 0.7em;
+  padding-inline: 2em;
+  border-radius: 2.8em;
+  color: #8752DD;
+  border: solid #8752DD 1px;
+}
+.btn2 a {
+  color: inherit;
 }
 
 .nav-items {
@@ -126,14 +155,13 @@ body {
 
 .nav-items a {
   text-decoration: none;
-  color: #422B70;
 }
 
 .titlemark {
   position: absolute;
   transform: rotate(90deg) translateY(-5rem);
   right: 0;
-  top: 50%;
+  top: 10%;
   font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
   text-transform: capitalize;
   opacity: 10%;
@@ -148,12 +176,20 @@ body {
   display: flex;
   justify-content: space-between;
   padding-block: 1.5em;
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
   color: #422B70;
 }
 
 body {
   background-color: #F7F5FA;
+}
+
+main {
+  position: relative;
+}
+
+.nav-logo {
+  font-weight: bold;
 }
 
 .img-con {
@@ -169,17 +205,21 @@ body {
 }
 .author .creative {
   align-items: center;
-  gap: 2.8rem;
+  gap: 2.5em;
   font-size: clamp(0.6rem, 0.273rem + 1.64vw, 1.5rem);
 }
 .author .myname {
-  font-size: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
+  font-size: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
   font-weight: bold;
   color: #422B70;
 }
 
+.author-d {
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+}
+
 .btn {
-  font-size: 1rem;
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
 }
 
 .author-img {
@@ -190,4 +230,25 @@ body {
 .bazz {
   justify-content: space-between;
   align-items: flex-start;
+  padding-bottom: 2rem;
+}
+
+.divid {
+  background-color: #422B70;
+  position: relative;
+  padding: 1rem 0;
+}
+
+.things {
+  font-size: clamp(2rem, 0.545rem + 7.27vw, 6rem);
+  font-weight: bold;
+  color: white;
+  transform: translateY(1rem);
+  text-transform: uppercase;
+}
+
+.doing {
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  gap: 4em;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
