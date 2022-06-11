@@ -7,6 +7,10 @@
   display: flex;
 }
 
+.flow > * + * {
+  margin-top: 2.4rem;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -53,6 +57,10 @@ body {
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
           text-decoration-skip-ink: auto;
+}
+
+a[class] {
+  text-decoration: none;
 }
 
 /* Make images easier to work with */
@@ -103,6 +111,13 @@ body {
   font-family: "Segoe UI";
 }
 
+.btn {
+  background-color: white;
+  padding: 0.6em 1.2em;
+  border-style: solid;
+  border-width: 0.2em 0.2em 0.2em 1em;
+}
+
 .nav-items {
   display: flex;
   gap: 1.5em;
@@ -116,10 +131,10 @@ body {
 
 .titlemark {
   position: absolute;
-  transform: rotate(90deg);
+  transform: rotate(90deg) translateY(-5rem);
   right: 0;
   top: 50%;
-  font-size: 4.3rem;
+  font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
   text-transform: capitalize;
   opacity: 10%;
   color: #422B70;
@@ -150,22 +165,26 @@ body {
   text-align: left;
 }
 .author .hey {
-  font-size: 1.7;
+  font-size: clamp(0.6rem, 0.273rem + 1.64vw, 1.5rem);
 }
 .author .creative {
   align-items: center;
   gap: 2.8rem;
-  font-size: 1.7;
+  font-size: clamp(0.6rem, 0.273rem + 1.64vw, 1.5rem);
 }
 .author .myname {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);
   font-weight: bold;
   color: #422B70;
 }
 
+.btn {
+  font-size: 1rem;
+}
+
 .author-img {
-  width: 50%;
-  transform: translate(1rem, -5rem);
+  width: 42%;
+  transform: translate(0, -5rem);
 }
 
 .bazz {

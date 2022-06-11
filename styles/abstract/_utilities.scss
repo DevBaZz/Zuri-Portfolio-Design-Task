@@ -5,3 +5,7 @@
 .flex{
     display: flex;
 }
+
+.flow > * + *{
+    margin-top: 2.4rem;
+}

@@ -1,9 +1,10 @@
 // Color:--------------------------------
 $dark-purple: #422B70;
 $background-color:#F7F5FA;
+$brightPurple:#8752DD;
 
 
 // Font---  
 $navfont:1rem;
-$authortex:1.7;
-$authorname:2.5rem;
+$authortex:clamp(0.6rem, 0.273rem + 1.64vw, 1.5rem);
+$authorname: clamp(1.5rem, 1.136rem + 1.82vw, 2.5rem);

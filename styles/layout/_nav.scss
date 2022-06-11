@@ -14,10 +14,10 @@
 // Page Water Mark
 .titlemark{
     position: absolute;
-    transform: rotate(90deg);
+    transform: rotate(90deg) translateY(-5rem);
     right: 0;
     top: 50%;
-    font-size: 4.3rem;
+    font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
     text-transform: capitalize;
     opacity: 10%;
     color: variable.$dark-purple;
