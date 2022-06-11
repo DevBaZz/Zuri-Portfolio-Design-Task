@@ -78,6 +78,18 @@ select {
     scroll-behavior: auto !important;
   }
 }
+@font-face {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Segoe UI Regular"), url("../../Font/Segoe UI.woff") format("woff");
+}
+@font-face {
+  font-family: "Segoe UI";
+  font-style: bold;
+  font-weight: bold;
+  src: local("Segoe UI Bold"), url("../../Font/Segoe UI Bold.woff") format("woff");
+}
 .contain {
   width: clamp(12.5rem, 100%, 50rem);
   margin: 0 auto;
@@ -106,4 +118,8 @@ select {
   display: flex;
   justify-content: space-between;
   padding-block: 1em;
+}
+
+body {
+  font-family: "Segoe UI";
 }/*# sourceMappingURL=style.css.map */
