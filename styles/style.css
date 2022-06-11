@@ -15,8 +15,11 @@ p,
 figure,
 blockquote,
 dl,
-dd {
+dd,
+ul,
+ol, * {
   margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -74,4 +77,33 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+.contain {
+  width: clamp(12.5rem, 100%, 50rem);
+  margin: 0 auto;
+}
+
+.nav-items {
+  display: flex;
+  gap: 1.5em;
+  justify-content: flex-end;
+}
+
+.nav-items a {
+  text-decoration: none;
+  color: black;
+}
+
+.titlemark {
+  position: absolute;
+  transform: rotate(90deg);
+  right: 0;
+  top: 50%;
+  font-size: 2rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 1em;
 }/*# sourceMappingURL=style.css.map */
