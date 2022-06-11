@@ -1,24 +1,34 @@
-@use "./index";
-@use './abstract/variable';
+@use "./index" as *;
+
 
 .img-con {
     width: clamp(0.5rem, 100%, 3.5rem);
 }
 
 .author {
-    color: variable.$dark-purple;
+    color:$dark-purple;
     text-align: left;
     .hey{
-        font-size: 1rem;
+        font-size:$authortex;
     }
     .creative {
         align-items: center;
-        gap: 2.6rem;
+        gap: 2.8rem;
+        font-size:$authortex;
     }
 
     .myname {
-        font-size: 2.5rem;
+        font-size:$authorname;
         font-weight: bold;
-        color: variable.$dark-purple;
+        color:$dark-purple;
+        
     }
+}
+.author-img{
+    width: 50%;
+    transform: translate(1rem, -5rem);
+}
+.bazz{
+    justify-content: space-between;
+    align-items: flex-start;
 }

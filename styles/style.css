@@ -1,5 +1,5 @@
 .contain {
-  width: clamp(12.5rem, 100%, 50rem);
+  width: clamp(12.5rem, 100%, 58rem);
   margin: 0 auto;
 }
 
@@ -150,14 +150,25 @@ body {
   text-align: left;
 }
 .author .hey {
-  font-size: 1rem;
+  font-size: 1.7;
 }
 .author .creative {
   align-items: center;
-  gap: 2.6rem;
+  gap: 2.8rem;
+  font-size: 1.7;
 }
 .author .myname {
   font-size: 2.5rem;
   font-weight: bold;
   color: #422B70;
+}
+
+.author-img {
+  width: 50%;
+  transform: translate(1rem, -5rem);
+}
+
+.bazz {
+  justify-content: space-between;
+  align-items: flex-start;
 }/*# sourceMappingURL=style.css.map */
