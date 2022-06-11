@@ -3,6 +3,10 @@
   margin: 0 auto;
 }
 
+.flex {
+  display: flex;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -123,6 +127,7 @@ body {
 
 .header {
   box-shadow: 0 3px 3px rgba(66, 43, 112, 0.188);
+  margin-bottom: 6rem;
 }
 .header .nav {
   display: flex;
@@ -134,4 +139,25 @@ body {
 
 body {
   background-color: #F7F5FA;
+}
+
+.img-con {
+  width: clamp(0.5rem, 100%, 3.5rem);
+}
+
+.author {
+  color: #422B70;
+  text-align: left;
+}
+.author .hey {
+  font-size: 1rem;
+}
+.author .creative {
+  align-items: center;
+  gap: 2.6rem;
+}
+.author .myname {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #422B70;
 }/*# sourceMappingURL=style.css.map */
