@@ -127,7 +127,11 @@ body {
 .header .nav {
   display: flex;
   justify-content: space-between;
-  padding-block: 1em;
+  padding-block: 1.5em;
   font-size: 1rem;
   color: #422B70;
+}
+
+body {
+  background-color: #F7F5FA;
 }/*# sourceMappingURL=style.css.map */

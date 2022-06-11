@@ -26,14 +26,16 @@
 .header{
     box-shadow: 0 3px 3px rgba(66, 43, 112, 0.188);
     
-
     .nav{
         display: flex;
         justify-content: space-between;
-        padding-block: 1em;
+        padding-block: 1.5em;
         font-size: variable.$navfont;
         color: variable.$dark-purple;
-    
     }
 
+}
+
+body{
+    background-color: variable.$background-color;
 }
