@@ -1,0 +1,43 @@
+@use '../abstract/variable' as *;
+
+form{
+    font-size: $normalfont;
+    border:  solid rgba(0, 0, 0, 0.349);
+    border-width: .2rem;
+    border-radius: $normalfont;
+    padding: 1.8rem 6rem;
+    width: clamp(3rem, 100%, 29rem);
+    color: $dark-purple;
+
+    .contact-btn{
+        font-size: $normalfont;
+        padding-inline: 4em;
+        border-width: 0;
+        cursor: pointer;
+        transform-origin: center center;
+        transition: all ease-in 200ms;
+
+        &:hover{
+            transform-origin: center center;
+            background-color: $dark-purple;
+            transition: all ease-out 500ms;
+            transform: translateY(1em) ;
+        }
+    }
+    .input{
+        flex-direction: column;
+        input, textarea{
+            padding: .2em .4em;
+        }
+    }
+    #message{
+    
+        resize: none;
+        height: 5rem;
+    }
+
+    .form-title{
+        color: $dark-purple;
+        font-size: $authorname;
+    }
+}

@@ -13,7 +13,17 @@
 }
 
 .mr {
-  margin-left: 6rem;
+  margin-left: clamp(2rem, 0.545rem + 7.27vw, 6rem);
+}
+
+.grid-center {
+  display: grid;
+  place-items: center;
+  padding-bottom: 5rem;
+}
+
+.form-flow > * + * {
+  margin-top: 1.5em;
 }
 
 /* Box sizing rules */
@@ -163,7 +173,7 @@ body {
   right: 0;
   top: 10%;
   font-size: clamp(1.5rem, 0.482rem + 5.09vw, 4.3rem);
-  text-transform: capitalize;
+  text-transform: uppercase;
   opacity: 10%;
   color: #422B70;
 }
@@ -270,4 +280,42 @@ footer ul.flex a {
   font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
   gap: 4em;
   color: white;
+}
+
+form {
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  border: solid rgba(0, 0, 0, 0.349);
+  border-width: 0.2rem;
+  border-radius: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  padding: 1.8rem 6rem;
+  width: clamp(3rem, 100%, 29rem);
+  color: #422B70;
+}
+form .contact-btn {
+  font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
+  padding-inline: 4em;
+  border-width: 0;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all ease-in 200ms;
+}
+form .contact-btn:hover {
+  transform-origin: center center;
+  background-color: #422B70;
+  transition: all ease-out 500ms;
+  transform: translateY(1em);
+}
+form .input {
+  flex-direction: column;
+}
+form .input input, form .input textarea {
+  padding: 0.2em 0.4em;
+}
+form #message {
+  resize: none;
+  height: 5rem;
+}
+form .form-title {
+  color: #422B70;
+  font-size: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,65 @@
+@use "../abstract/variable" as *;
+
+
+.img-con {
+    width: clamp(0.5rem, 100%, 3.5rem);
+}
+
+.author {
+    color:$dark-purple;
+    text-align: left;
+    .hey{
+        font-size:$authortex;
+    }
+    .creative {
+        align-items: center;
+        gap: 2.5em;
+        font-size:$authortex;
+    }
+
+    .myname {
+        font-size:$authorname;
+        font-weight: bold;
+        color:$dark-purple;
+        
+    }
+  
+}
+.author-d{
+    font-size: $normalfont ;
+}
+
+.btn{
+    font-size: $normalfont;
+    
+}
+.author-img{
+    width: 42%;
+    transform: translate(0, -5rem);
+}
+.bazz{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 2rem;
+}
+
+.divid{
+    background-color: $dark-purple;
+    position: relative;
+    padding: 1.4rem 0;
+}
+
+.things{
+    font-size:$mega;
+    font-weight: bold;
+    color: white;
+    transform: translateY(1rem);
+    text-transform: uppercase;
+   
+    
+}
+.doing{
+    font-size: $normalfont;
+    gap: 4em;
+    color: white;
+}
