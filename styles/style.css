@@ -218,7 +218,7 @@ footer .ft {
   justify-content: space-between;
 }
 footer ul.flex {
-  gap: 3rem;
+  gap: 3em;
   list-style: none;
 }
 footer ul.flex a {
