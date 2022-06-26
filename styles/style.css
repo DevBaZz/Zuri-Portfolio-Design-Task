@@ -13,7 +13,11 @@
 }
 
 .mr {
-  margin-left: clamp(2rem, 0.545rem + 7.27vw, 6rem);
+  margin-left: auto;
+}
+
+.ml {
+  margin-right: auto;
 }
 
 .grid-center {
@@ -219,6 +223,9 @@ footer ul.flex {
 footer ul.flex a {
   text-decoration: none;
   color: white;
+}
+footer ul {
+  width: clamp(3em, 100%, 10rem);
 }
 
 .img-con {

@@ -64,4 +64,7 @@ footer{
             color: white;
         }
     }
+    ul{
+        width: clamp(3em, 100%, 10rem);
+    }
 }
