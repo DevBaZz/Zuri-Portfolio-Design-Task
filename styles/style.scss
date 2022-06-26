@@ -1,1 +1,23 @@
 @use "./index" as *;
+
+@media (max-width:460px) {
+    :root{
+        font-size: 13px;
+    }
+}
+
+
+
+
+@media (max-width:350px) {
+    :root{
+        font-size: 11px;
+    }
+}
+
+
+@media (max-width:300px) {
+    :root{
+        font-size: 6px;
+    }
+}

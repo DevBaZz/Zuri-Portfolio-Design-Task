@@ -13,7 +13,11 @@
 }
 
 .mr {
-  margin-left: clamp(2rem, 0.545rem + 7.27vw, 6rem);
+  margin-left: auto;
+}
+
+.ml {
+  margin-right: auto;
 }
 
 .grid-center {
@@ -66,6 +70,7 @@ body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 /* A elements that don't have a class get default styles */
@@ -220,6 +225,9 @@ footer ul.flex a {
   text-decoration: none;
   color: white;
 }
+footer ul {
+  width: clamp(3em, 100%, 10rem);
+}
 
 .img-con {
   width: clamp(0.5rem, 100%, 3.5rem);
@@ -318,4 +326,20 @@ form #message {
 form .form-title {
   color: #422B70;
   font-size: clamp(1rem, 0.455rem + 2.73vw, 2.5rem);
+}
+
+@media (max-width: 460px) {
+  :root {
+    font-size: 13px;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    font-size: 11px;
+  }
+}
+@media (max-width: 300px) {
+  :root {
+    font-size: 6px;
+  }
 }/*# sourceMappingURL=style.css.map */
