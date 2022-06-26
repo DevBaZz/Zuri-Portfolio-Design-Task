@@ -3,10 +3,10 @@
 form{
     font-size: $normalfont;
     border:  solid rgba(0, 0, 0, 0.349);
-    border-width: .2rem;
+    border-width: .2em;
     border-radius: $normalfont;
     padding: 1.8em 6em;
-    width: clamp(3rem, 100%, 29rem);
+    width: clamp(3em, 100%, 29em);
     color: $dark-purple;
 
     .contact-btn{

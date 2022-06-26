@@ -293,10 +293,10 @@ footer ul {
 form {
   font-size: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
   border: solid rgba(0, 0, 0, 0.349);
-  border-width: 0.2rem;
+  border-width: 0.2em;
   border-radius: clamp(0.5rem, 0.318rem + 0.91vw, 1rem);
   padding: 1.8em 6em;
-  width: clamp(3rem, 100%, 29rem);
+  width: clamp(3em, 100%, 29em);
   color: #422B70;
 }
 form .contact-btn {
